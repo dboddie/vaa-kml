@@ -1,6 +1,9 @@
 metno-vaa-kml changelog
 -----------------------
 
+0.3.2 (2015-06-19)
+Add movement to ash clouds, if it exists in the VAAC.
+
 0.3.1 (2014-12-15)
 Updated the template to write different style names to the KML meta-data for
 different flight levels in the original VAA message.
