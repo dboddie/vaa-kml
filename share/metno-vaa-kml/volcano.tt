@@ -48,7 +48,6 @@
 	<styleUrl>#msn_ylw-pushpin</styleUrl>
     <ExtendedData>
       <Data name="met:groupId"><value>[% id %]</value></Data>
-      <Data name="met:layerId"><value>0</value></Data>
       [%- IF area.movement; mov = area.movement; %]
       <Data name="met:movement"><value>[% mov.direction %] [% mov.speed %][% mov.unit %]</value></Data>
       [%- END %]
@@ -157,14 +156,6 @@
       <ListStyle>
       </ListStyle>
     </Style>
-    <ExtendedData>
-      <Data name="met:layer:0:name">
-        <value>new layer (0)</value>
-      </Data>
-      <Data name="met:layer:0:visible">
-        <value>true</value>
-      </Data>
-    </ExtendedData>
     <Placemark>
       <name>[% volcano.name %] [% volcano.id %]</name>
       <Snippet>Snippet</Snippet>
@@ -172,7 +163,6 @@
       <styleUrl>#exampleBalloonStyle</styleUrl>
       <ExtendedData>
         <Data name="met:groupId"><value>0</value></Data>
-        <Data name="met:layerId"><value>0</value></Data>
         <Data name="met:objectType"><value>Symbol</value></Data>
         <Data name="met:style:type"><value>Volcanic Eruption</value></Data>
       </ExtendedData>
