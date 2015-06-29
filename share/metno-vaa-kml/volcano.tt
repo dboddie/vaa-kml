@@ -57,6 +57,7 @@
 [%- ELSE %]
       <Data name="met:style:type"><value>Ash cloud FL[% fl.from %]/[% fl.to %] (forecast)</value></Data>
 [%- END %]
+      <Data name="met:info:flightLevel"><value>FL[% fl.from %]/[% fl.to %]</value></Data>
     </ExtendedData>
 	<Polygon>
 	  <tessellate>1</tessellate>
