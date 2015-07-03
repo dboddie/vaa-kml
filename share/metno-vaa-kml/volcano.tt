@@ -165,7 +165,7 @@
       <ExtendedData>
         <Data name="met:groupId"><value>0</value></Data>
         <Data name="met:objectType"><value>Symbol</value></Data>
-        <Data name="met:style:type"><value>Volcanic Eruption</value></Data>
+        <Data name="met:style:type"><value>Forecast|Volcanic Eruption</value></Data>
       </ExtendedData>
       <Point>
         <coordinates>[% psn.lon %],[% psn.lat %],0</coordinates>

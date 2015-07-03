@@ -1,6 +1,9 @@
 metno-vaa-kml changelog
 -----------------------
 
+0.3.5 (2015-07-03)
+Updated the name used for the volcanic eruption symbol to match that used in Diana.
+
 0.3.4 (2015-06-29)
 Removed layer information from the generated KML files.
 Added flight level information as extended data.
