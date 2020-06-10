@@ -131,6 +131,7 @@ sub readfile {
 sub get_parser {
     use Regexp::Grammars;
     return qr{
+        <timeout: 15>
         <nocontext:>
 
         ^
@@ -300,7 +301,7 @@ sub get_parser {
         <rule: OBSVACLD>
             OBS VA CLD:
             (?:
-              <[ForecastArea]>+ % <.ws>
+              <[ForecastArea]>+ % <.ws> <message=va_mov>? #Get a forecast area followed by possible MOV statement we ignore
             | <message=fcstmessage>
             | <message=notobserved>
             | <message=notdetected>
@@ -318,6 +319,7 @@ sub get_parser {
         <rule: notprovided>  NOT PROVIDED
         <rule: notobserved>  VA NOT OBSERVED
         <rule: notdetected>  NO VA DETECTED
+        <rule: va_mov>       MOV <anytext>?
 
         <rule: notidentifiable>
             (?: VA | ASH ) NOT IDENTIFIABLE <anytext>
